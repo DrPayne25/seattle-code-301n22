@@ -214,6 +214,7 @@ console.log(Student.courseName());
 // How do arrow functions affect constructor functions?
 Student.prototype.scope = function() {
   console.log(this);
+  return this;
 };
 
 // DONE: Uncomment the following line of code to see the output in the browser console
@@ -222,12 +223,12 @@ console.log(joe.scope());
 Student.prototype.scopeArrow = () => console.log(this);
 
 // DONE: Uncomment the following line of code to see the output in the browser console
-console.log(joe.scopeArrow());
+// console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// When joe.scope is invoked we are looking at an instance of the Joe Student object
+// When joe.scope is invoked we are looking at the instance of the Joe Student object
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// When joe.scopeArrow is invoked we are looking at the instance of the browsers I am assuming
+// When joe.scopeArrow is invoked we are looking at the instance of the browsers window
 // 3. Explain why "this" is different when an arrow function is used.
-// It is different because arrow functions can't be used with this when writing code.
+// It is different because arrow 'this' refert to the code around it so it would be looking at the window and not the constructor
