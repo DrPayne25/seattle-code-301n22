@@ -230,4 +230,4 @@ console.log(joe.scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // When joe.scopeArrow is invoked we are looking at the instance of the browsers I am assuming
 // 3. Explain why "this" is different when an arrow function is used.
-// It is differnt because arrow functions can't be used with this when writing code.
+// It is different because arrow functions can't be used with this when writing code.
